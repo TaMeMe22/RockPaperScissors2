@@ -10,6 +10,7 @@ const scissors = document.getElementById("scissors");
 const bomb = document.getElementById("bomb");
 const reset = document.getElementById("reset");
 
+
 function getComputerChoice(){
   const choices = ['rock', 'paper', 'scissors'];
   const randomNumber = (Math.floor(Math.random()*3));
@@ -62,8 +63,6 @@ function game(playerChoice) {
         }
     }
 
-
-
     if (playerChoice === 'paper'){
         if (computerChoice === 'rock'){
             win(playerChoice, computerChoice);
@@ -109,6 +108,12 @@ function main(){
 }
 
 main();
+
+
+function yourName() {
+  var playerName = document.getElementById("player-name").value;
+  document.getElementById("name").innerHTML = playerName;
+}
 
 
 function resetGame() {
