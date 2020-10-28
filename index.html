@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <header class="header"> 
+        
+        <h1 class="rps">Rock, Paper, Scissors</h1>
+    </header>        
+    
+            <div class="rules">
+                <p>Rules of the Game:</p>
+                <p>The game is played where players picks signals that will represent the elements of the game: <br> Rock, Paper and Scissors. <br>The outcome of the game is determined by 4 simple rules:
+                  <ul class="list">
+                    <li>Rock wins against scissors, but loses to paper. </li>
+                    <li>Scissors win against paper, but lose to rock. </li>
+                    <li>Paper wins against rock, but loses to scissors. </li>
+                    <li>If there’s a tie, then the game ends in a draw.</li>
+                  </ul>
+                </p>   
+            </div>   
+      
+</section> 
+<section>  
+        <div class="buttons">          
+          <button id="play" class="play-btn">PLAY GAME</button>
+          <button id="reset" class="reset-btn">RESET GAME</button>
+        </div>
+
+        <div class="endGame">
+          <p>Who Wins</p>
+        </div>
+
+        <div id="scoreboard" class="scoreboard">SCORE
+            <p id="player-score">Player: 0</p>
+            <p id="computer-score">Computer: 0</p>
+        </div>
+        
+        <div class="result">
+            <p>Choose Your Game Piece</p>
+        </div>
+
+
+
+        <div class="images">
+            <button class="choice" id="rock"><img src="images/icons8-hand-rock-100 (2).png" alt="" style="width: 150%;"></button>
+            <button class="choice" id="paper"><img src="images/icons8-paper-100 (2).png" alt=""  style="width: 150%;"></button>
+            <button class="choice" id="scissors"><img src="images/icons8-hand-scissors-100 (2).png" alt=""  style="width: 150%;"></button>
+            <button class="choice" id="bomb"><img src="images/icons8-explosive-100 (2).png" alt="" style="width: 150%;"></button>             
+        </div>  
+
+
+
+</section> 
+    
+</body>
+    <script src="./script.js"></script>
+</html>
