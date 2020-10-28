@@ -8,7 +8,8 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const bomb = document.getElementById("bomb");
-const reset = document.getElementById("reset");
+const reset = document.getElementById("reset")
+
 
 
 function getComputerChoice(){
@@ -48,8 +49,6 @@ const smallPlayerWord = "play".fontsize(2).sup();
   setTimeout(function() {document.getElementById(playerChoice).classList.remove('yellow-glow')}, 1000);
 }
 
-
-
 function game(playerChoice) {
   const computerChoice = getComputerChoice();
   const getWinner = (playerChoice, computerChoice)
@@ -62,6 +61,8 @@ function game(playerChoice) {
           tie(playerChoice, computerChoice);  
         }
     }
+
+
 
     if (playerChoice === 'paper'){
         if (computerChoice === 'rock'){
@@ -89,7 +90,7 @@ function game(playerChoice) {
     };
 
 
-function main(){
+function wholeGame(){
   rock.addEventListener('click', function(){
     game("rock");
   })
@@ -107,21 +108,17 @@ function main(){
   })
 }
 
-main();
+wholeGame();
 
 
-function yourName() {
-  var playerName = document.getElementById("player-name").value;
-  document.getElementById("name").innerHTML = playerName;
-}
-
-
-function resetGame() {
-  scoreboard.player = 0;
-  scoreboard.computer = 0;
+// reset Game
+function resetGame(){
+  scoreboard.playerScore = 0;
+  scoreboard.computerScore = 0;
   scoreboard.innerHTML = `
-    <p>Player: 0</p>
-    <p>Computer: 0</p>
+ <p>Player: 0</p>
+ <p>Computer: 0</p>
   `;
 }
+
 reset.addEventListener('click', resetGame);
