@@ -105,8 +105,6 @@ body{
     border: 6px solid #F5B112;
     box-shadow: 0 0 10px #f5f510 ;
 }
-#player-name{
-    margin-left: 40rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.endGame{
+    text-align: center;
 }
